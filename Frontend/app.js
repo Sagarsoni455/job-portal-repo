@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const API_BASE_URL = window.location.hostname === 'localhost' ?
                          'http://localhost:3000/api' :
                          'https://mongodb://localhost:27017/jobportaldb/api';
-s
+
     const jobListingsContainer = document.getElementById('jobListings');
     const searchBar = document.getElementById('searchBar');
     const locationSearchBar = document.getElementById('locationSearchBar'); // New element for location search
