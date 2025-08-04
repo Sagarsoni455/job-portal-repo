@@ -1,0 +1,112 @@
+/* Custom CSS for Admin Panel Dashboard */
+
+body {
+    overflow-x: hidden;
+    background-color: #f2f5f7;
+}
+
+#wrapper {
+    display: flex;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin .25s ease-out;
+    width: 15rem;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+/* Custom styling for dark theme elements */
+.bg-dark {
+    background-color: #212529 !important;
+}
+
+.list-group-item-action {
+    color: #ced4da; /* Lighter text for dark sidebar links */
+}
+
+.list-group-item-action:hover {
+    color: #fff;
+    background-color: #495057;
+}
+
+.list-group-item-action.active {
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+    color: #fff !important;
+}
+
+/* Card styling for dashboard overview */
+.card.bg-primary { background-color: #007bff !important; }
+.card.bg-success { background-color: #28a745 !important; }
+.card.bg-warning { background-color: #ffc107 !important; color: #343a40 !important; } /* Text color for warning card */
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Rounded inputs and buttons */
+.form-control.rounded,
+.btn.rounded-pill {
+    border-radius: 8px !important;
+}
+
+.btn.rounded-pill {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Table styling */
+.table {
+    border-radius: 8px;
+    overflow: hidden; /* Ensures rounded corners apply to content */
+}
+.table thead th {
+    background-color: #343a40;
+    color: #fff;
+    border-bottom: none;
+}
+.table tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}

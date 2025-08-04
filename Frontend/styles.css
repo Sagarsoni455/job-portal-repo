@@ -1,0 +1,355 @@
+/* Custom CSS for InsiderJobs Job Portal */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 58px; /* Offset for fixed-top navbar */
+}
+
+/* --- Header Styling --- */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+    background-color: #fff !important; /* White background for navbar */
+}
+
+.navbar-brand-custom {
+    font-weight: 900; /* Extra bold */
+    color: #0d6efd; /* A shade of blue */
+    font-size: 1.8rem; /* Larger font size */
+}
+
+.btn-primary-custom {
+    background-color: #0d6efd; /* Darker blue for primary buttons */
+    border-color: #0d6efd;
+    color: white;
+}
+
+.btn-primary-custom:hover {
+    background-color: #0a58ca; /* Slightly darker on hover */
+    border-color: #0a58ca;
+}
+
+/* --- Hero Section Styling --- */
+.hero-section {
+    background-color: #2c3e50; /* Dark blue background */
+    min-height: 450px; /* Increased height */
+    padding: 80px 0;
+    position: relative;
+    color: white;
+    display: flex; /* Use flexbox for vertical centering */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.hero-section h1 {
+    font-size: 3.2rem; /* Adjusted for image reference */
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-section p.lead {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem; /* More space below text */
+}
+
+/* Search bar in hero section */
+/* Search bar in hero section */
+.search-bar-hero {
+    /* Main container for the whole bar, applying outer rounded corners */
+    border-radius: 50px;
+    overflow: hidden; /* Ensures contents respect border-radius */
+}
+
+.search-bar-hero .form-control,
+.search-bar-hero .input-group-text,
+.search-bar-hero .btn {
+    border: none; /* Remove all borders for integrated look */
+    height: 60px; /* Taller search bar elements */
+    font-size: 1.1rem;
+    padding: 0 1.5rem; /* Default padding for all parts */
+    box-shadow: none !important; /* Remove Bootstrap's focus shadow */
+}
+
+.search-bar-hero .input-group-text {
+    background-color: white;
+    color: #6c757d; /* Icon color */
+    /* No border-radius here as it's handled by the parent container and specific elements */
+}
+
+.search-bar-hero .search-input {
+    /* No border-radius here, as it flows from the first input-group-text to the location icon */
+    border-radius: 0;
+}
+
+/* Specific styling for the Search button */
+.search-bar-hero .search-button {
+    background-color: #0d6efd; /* Blue background */
+    color: white;
+    /* Apply border-radius only to the right side of the button */
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.search-bar-hero .search-button:hover {
+    background-color: #0a58ca; /* Darker blue on hover */
+}
+
+/* Specific rounding for the very first input-group-text */
+.search-bar-hero .input-group-text:first-child {
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+    padding-left: 1.5rem; /* Ensure consistent padding on left of icon */
+    padding-right: 0.5rem; /* Adjust padding next to icon for text */
+}
+
+/* Specific styling for the first input field to connect visually with the first icon */
+.search-bar-hero input#searchBar {
+    border-top-left-radius: 0 !important; /* Remove left radius from input */
+    border-bottom-left-radius: 0 !important; /* Remove left radius from input */
+    padding-left: 0.5rem; /* Adjust padding after icon */
+}
+
+/* Styling for the location icon's background to ensure seamless connection */
+.search-bar-hero .input-group-text.border-start-0 {
+    border-left: none !important; /* Ensure no border between location icon and first input */
+    padding-left: 1.5rem; /* Consistent padding around location icon */
+    padding-right: 0.5rem;
+}
+
+/* Styling for the location input field to ensure seamless connection */
+.search-bar-hero input#locationSearchBar {
+    border-right: none !important; /* Ensure no border between location input and search button */
+    padding-left: 0.5rem; /* Adjust padding after location icon */
+    border-top-right-radius: 0 !important; /* Remove right radius */
+    border-bottom-right-radius: 0 !important; /* Remove right radius */
+}
+
+/* Ensure images within input-group-text are correctly sized if they replace Font Awesome icons */
+.search-bar-hero .input-group-text img {
+    width: 20px; /* Standardize icon size */
+    height: 20px;
+    object-fit: contain; /* Ensure image fits without distortion */
+}
+
+
+/* Specific rounding for search bar elements */
+.search-bar-hero .input-group-text:first-child {
+    border-top-left-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+}
+
+.search-bar-hero input.search-input:first-of-type {
+    border-top-left-radius: 50px !important; /* Apply to first input in group */
+    border-bottom-left-radius: 50px !important;
+}
+
+/* Adjust for second input, make it flat on sides */
+.search-bar-hero input.search-input.border-end-0 {
+    border-radius: 0 !important;
+}
+
+/* Adjust the icon backgrounds to merge visually with inputs */
+.search-icon-bg {
+    background-color: white !important;
+    color: #6c757d;
+    padding-left: 1.5rem;
+    padding-right: 0.5rem; /* Adjust padding next to icon */
+}
+
+/* Specific styling to ensure search inputs flow without gaps */
+.search-bar-hero input.search-input {
+    box-shadow: none !important; /* Remove focus shadow */
+}
+
+
+/* --- Trusted By Section --- */
+.trusted-by-section {
+    background-color: #f2f5f7; /* Light grey background */
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.trusted-logo {
+    height: 35px; /* Adjust size as needed */
+    filter: grayscale(100%); /* Make logos grayscale */
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.trusted-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* --- Main Content Layout --- */
+.container.mt-5 {
+    padding-top: 2rem; /* Add some top padding to separate from trusted by section */
+}
+
+/* Left Column Filters */
+.card-title-filter {
+    font-weight: bold;
+    color: #343a40;
+    font-size: 1.1rem;
+}
+
+.badge.bg-primary-subtle {
+    background-color: #e0f2ff !important; /* Light blue background for tags */
+    color: #0d6efd !important; /* Blue text */
+    font-weight: normal;
+}
+
+.badge .fas.fa-times-circle {
+    font-size: 0.8em; /* Smaller close icon */
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.form-check-label {
+    font-size: 0.95rem;
+    color: #495057;
+}
+
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Right Column Job Listings */
+h2.mb-4.text-start {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.job-card-custom {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border: none; /* Remove default card border */
+    min-height: 250px; /* Ensure consistent card height */
+    display: flex;
+    flex-direction: column;
+}
+
+.job-card-custom:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+}
+
+.job-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #e0f2ff; /* Light blue background for icon square */
+    border-radius: 8px; /* Slightly rounded corners for the icon square */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.job-icon i {
+    color: #0d6efd; /* Blue icon color */
+    font-size: 1.5rem;
+}
+
+.job-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 0.5rem;
+}
+
+.job-tag {
+    display: inline-block;
+    background-color: #e9ecef; /* Light grey background for tags */
+    color: #6c757d;
+    padding: 0.3em 0.8em;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.job-description {
+    font-size: 0.95rem;
+    color: #495057;
+    margin-bottom: 1rem;
+    flex-grow: 1; /* Allows description to take up available space */
+}
+
+.card-buttons .btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+    border-radius: 8px; /* Slightly rounded buttons */
+    font-weight: 500;
+}
+
+.card-buttons .btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+}
+
+.card-buttons .btn-primary:hover {
+    background-color: #0a58ca;
+    border-color: #0a58ca;
+}
+
+.card-buttons .btn-outline-primary {
+    border-color: #0d6efd;
+    color: #0d6efd;
+}
+
+.card-buttons .btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: white;
+}
+
+
+/* --- Pagination Styling --- */
+.pagination .page-item .page-link {
+    border-radius: 8px; /* Rounded page numbers */
+    margin: 0 4px;
+    color: #0d6efd;
+    border: 1px solid #dee2e6;
+    transition: all 0.2s ease-in-out;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pagination .page-item .page-link:hover:not(.active) {
+    background-color: #e9ecef;
+    border-color: #e9ecef;
+}
+
+/* Adjustments for modals and toasts */
+.modal-body .form-control.rounded {
+    border-radius: 8px;
+}
+
+.toast-container .toast.text-bg-success {
+    background-color: #28a745 !important;
+    color: white;
+}
+.toast-container .toast.text-bg-danger {
+    background-color: #dc3545 !important;
+    color: white;
+}
+.toast-container .toast.text-bg-warning {
+    background-color: #ffc107 !important;
+    color: #212529; /* Dark text for warning */
+}
+.toast-container .toast.text-bg-info {
+    background-color: #17a2b8 !important;
+    color: white;
+}
