@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Determine API_BASE_URL based on environment
     const API_BASE_URL = window.location.hostname === 'localhost' ?
                          'http://localhost:3000/api' :
-                         'https://https://mongodb://localhost:27017/jobportaldb/api';
+                         'https://mongodb://localhost:27017/jobportaldb/api';
 
     const jobListingsContainer = document.getElementById('jobListings');
     const searchBar = document.getElementById('searchBar');
